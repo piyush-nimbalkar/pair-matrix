@@ -1,0 +1,6 @@
+rvm_install_on_use_flag=1
+rvm --create use 1.9.2-p180@pair-matrix
+if [ "$?" = "0" ]
+then
+	which bundle || gem install bundler -v 1.0.18
+fi
