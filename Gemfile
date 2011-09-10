@@ -12,6 +12,10 @@ group :test, :development do
   gem 'cucumber'
 end
 
+group :development do
+  gem 'heroku'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
