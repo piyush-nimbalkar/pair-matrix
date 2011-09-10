@@ -11,10 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110910134405) do
+ActiveRecord::Schema.define(:version => 20110910175341) do
 
   create_table "employees", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pairings", :force => true do |t|
+    t.integer  "employee_id"
+    t.integer  "pair_id"
+    t.integer  "pairing_frequency"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
