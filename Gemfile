@@ -6,6 +6,7 @@ gem 'nokogiri', '1.5.0'
 
 group :test, :development do
   gem "rspec-rails", "~> 2.4"
+  gem 'database_cleaner'
   gem 'capybara'
   gem 'cucumber-rails'
   gem 'cucumber'
