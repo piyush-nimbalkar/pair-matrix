@@ -1,0 +1,7 @@
+package_assets:         on
+embed_assets:           on
+javascript_compressor:  closure
+
+stylesheets:
+  common:
+    - public/stylesheets/main.css
