@@ -1,5 +1,6 @@
 class PairingsController < ApplicationController
   def create
+    @success = false
     @employees = Employee.all
     @emp_one = Employee.find_by_name(params[:value1])
     @emp_two = Employee.find_by_name(params[:value2])
@@ -15,11 +16,16 @@ class PairingsController < ApplicationController
       else
         increase_count(pair)
       end
+      @success = true
     end
   end
 
   def increase_count(pair)
     pair.pairing_frequency += 1
     pair.save
+  end
+
+  def index
+    @employees = Employee.all
   end
 end

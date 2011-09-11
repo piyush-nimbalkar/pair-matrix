@@ -1,0 +1,18 @@
+%h2.heading
+  Add Pair
+
+%form{:action => "updated_pair"}
+  %h3
+    Employee One
+    %select{:name => "value1"}
+      -employees.each do |employee|
+        %option{:value => "#{employee.name}"}
+          =employee.name
+  %h3
+    Employee Two
+    %select{:name => "value2"}
+      -employees.each do |employee|
+        %option{:value => "#{employee.name}"}
+          =employee.name
+
+  %input{:type => "submit", :value => "Add"}
