@@ -1,2 +1,18 @@
-%h4
-  A Pair Matrix will be displayed here !
+%table
+  %tr
+    %td
+    -@employees.reverse.each do |employee|
+      %td
+        %div.matrix
+          =employee.name
+  -@employees.each do |employee|
+    %tr
+      %td
+        %div.matrix
+          =employee.name
+      -Pairing.where("employee_id = #{employee.id}").each do |pairing|
+        %td
+          %div.matrix
+            =pairing.pairing_frequency
+
+

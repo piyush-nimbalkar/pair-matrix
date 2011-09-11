@@ -10,6 +10,7 @@ class PairingsController < ApplicationController
         pair = @emp_one.inverse_pairings.find_by_employee_id(@emp_two.id)
         if !pair
           Pairing.create(:employee_id => @emp_one.id, :pair_id => @emp_two.id, :pairing_frequency => 1)
+          @frequency = 1
         else
           increase_count(pair)
         end
@@ -21,7 +22,7 @@ class PairingsController < ApplicationController
   end
 
   def increase_count(pair)
-    pair.pairing_frequency += 1
+    @frequency = pair.pairing_frequency += 1
     pair.save
   end
 

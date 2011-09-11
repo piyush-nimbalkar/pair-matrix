@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe EmployeesController do
+describe HomeController do
 
   describe "GET 'index'" do
     it "should be successful" do
