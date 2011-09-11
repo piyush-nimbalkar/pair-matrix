@@ -51,3 +51,21 @@ li.names {
     font-size: 1.2em
 
 }
+
+h3 {
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+select {
+    padding: 2px;
+    margin-left: 20px;
+}
+
+input {
+    margin: 30px;
+    margin-left: 50px;
+    padding: 3px 10px 3px 10px;
+    font-size: 1.1em
+}
