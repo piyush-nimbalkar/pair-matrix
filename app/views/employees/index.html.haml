@@ -1,2 +1,7 @@
-%h1 Employees#index
-%p Find me in app/views/employees/index.html.haml
+%div
+  %h2.heading
+    List of Employees
+  %ol
+    -@employees.each do |employee|
+      %li.names
+        =employee.name

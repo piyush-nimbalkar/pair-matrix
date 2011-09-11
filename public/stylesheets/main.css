@@ -40,4 +40,14 @@ nav li a {
     text-decoration: none
 }
 
+.heading {
+    padding: 200px 0 20px 10px;
+    color: #a52a2a;
+}
 
+li.names {
+    list-style-type: decimal;
+    margin: 15px;
+    font-size: 1.2em
+
+}
