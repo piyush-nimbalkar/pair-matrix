@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Pairing do
   before(:each) do
-    @pairing_attr = {:employee_id => "1", :pair_id => 2, :pairing_frequency => 3}
+    @pairing_attr = {:employee_id => 1, :pair_id => 2, :pairing_frequency => 3}
   end
 
   it "should create a new instance of given valid attributes" do
