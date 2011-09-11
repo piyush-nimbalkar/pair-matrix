@@ -7,6 +7,7 @@ PairMatrix::Application.configure do
   config.cache_classes = false
 
   config.gem "jammit"
+
   # Log error messages when you accidentally call methods on nil.
   config.whiny_nils = true
 
